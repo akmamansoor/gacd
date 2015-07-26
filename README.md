@@ -1,4 +1,4 @@
-# Tidied Data from the Human Activity Recognition Using Smartphones Dataset
+#### Human Activity Recognition Using Smartphones Dataset - Tidied for "Getting and Cleaning Data" Course
 
 A few steps were taken to transform the initial data set.
 
