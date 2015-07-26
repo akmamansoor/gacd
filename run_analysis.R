@@ -8,9 +8,8 @@ runAnalysis <- function() {
     url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 	if(!file.exists("./data")) {
 		dir.create("./data")
-	} else {
-		downloadDir <- "./data"
-	}
+	} 
+	downloadDir <- "./data"
 
     zipFile <- filePath(downloadDir, "dataset.zip")
     if(!file.exists(zipFile)) { download.file(url, zipFile, method = "curl") }
