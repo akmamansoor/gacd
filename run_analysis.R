@@ -17,7 +17,7 @@ runAnalysis <- function() {
     dataDir <- "UCI HAR Dataset"
     if(!file.exists(dataDir)) { unzip(zipFile, exdir = ".") }
 
-    dataDir
+    print(dataDir)
   }
 
   dataDir <- downloadData()
@@ -43,8 +43,8 @@ runAnalysis <- function() {
 
   # Use descriptive activity names to name the activities in the data set.
   # Get the activity data and map to nicer names:
-  yTrain <- read("train/y_train.txt")
-  yTest  <- read("test/y_test.txt")
+  yTrain <- readData("train/y_train.txt")
+  yTest  <- readData("test/y_test.txt")
   yMerged <- rbind(yTrain, yTest)[, 1]
 
   activityNames <-
